@@ -1,0 +1,56 @@
+{% extends 'main/layout.html' %}
+
+    {% block title %}
+        SignIn
+    {% endblock %}
+
+{% block content %}
+    <aside>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class="container-fluid">
+                        <a class="navbar-brand" href="/about">Sign in</a>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Головна</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">Про нас</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                        <form class="d-flex" role="search">
+                            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                                <li class="nav-item">
+                                    <button class="btn btn-outline-success" type="submit" formaction="/SignUp">Sign Up</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+            </nav>
+        </aside>
+
+        <form>
+            <br><br><br>
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        </form>
+{% endblock %}
